@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E47EAA06205914A6004DC843 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47EAA05205914A6004DC843 /* demo.jpg */; };
 		E4BB0DD92059116800B95206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DD82059116800B95206 /* AppDelegate.swift */; };
 		E4BB0DDB2059116800B95206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DDA2059116800B95206 /* ViewController.swift */; };
 		E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB0DDC2059116800B95206 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E47EAA05205914A6004DC843 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		E4BB0DD52059116800B95206 /* Klotski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klotski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BB0DD82059116800B95206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4BB0DDA2059116800B95206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				E4BB0DDF2059116800B95206 /* Assets.xcassets */,
 				E4BB0DE12059116800B95206 /* LaunchScreen.storyboard */,
 				E4BB0DE42059116800B95206 /* Info.plist */,
+				E47EAA05205914A6004DC843 /* demo.jpg */,
 			);
 			path = Klotski;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47EAA06205914A6004DC843 /* demo.jpg in Resources */,
 				E4BB0DE32059116800B95206 /* LaunchScreen.storyboard in Resources */,
 				E4BB0DE02059116800B95206 /* Assets.xcassets in Resources */,
 				E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */,
