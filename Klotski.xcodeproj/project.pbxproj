@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4BB0DD92059116800B95206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DD82059116800B95206 /* AppDelegate.swift */; };
+		E4BB0DDB2059116800B95206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DDA2059116800B95206 /* ViewController.swift */; };
+		E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB0DDC2059116800B95206 /* Main.storyboard */; };
+		E4BB0DE02059116800B95206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BB0DDF2059116800B95206 /* Assets.xcassets */; };
+		E4BB0DE32059116800B95206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB0DE12059116800B95206 /* LaunchScreen.storyboard */; };
+		E4BB0DEE2059116800B95206 /* KlotskiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DED2059116800B95206 /* KlotskiTests.swift */; };
+		E4BB0DF92059116800B95206 /* KlotskiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DF82059116800B95206 /* KlotskiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4BB0DEA2059116800B95206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4BB0DCD2059116800B95206 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4BB0DD42059116800B95206;
+			remoteInfo = Klotski;
+		};
+		E4BB0DF52059116800B95206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4BB0DCD2059116800B95206 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4BB0DD42059116800B95206;
+			remoteInfo = Klotski;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4BB0DD52059116800B95206 /* Klotski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klotski.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BB0DD82059116800B95206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4BB0DDA2059116800B95206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4BB0DDD2059116800B95206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4BB0DDF2059116800B95206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4BB0DE22059116800B95206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4BB0DE42059116800B95206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BB0DE92059116800B95206 /* KlotskiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlotskiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BB0DED2059116800B95206 /* KlotskiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlotskiTests.swift; sourceTree = "<group>"; };
+		E4BB0DEF2059116800B95206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BB0DF42059116800B95206 /* KlotskiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlotskiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BB0DF82059116800B95206 /* KlotskiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlotskiUITests.swift; sourceTree = "<group>"; };
+		E4BB0DFA2059116800B95206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4BB0DD22059116800B95206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DE62059116800B95206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DF12059116800B95206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4BB0DCC2059116800B95206 = {
+			isa = PBXGroup;
+			children = (
+				E4BB0DD72059116800B95206 /* Klotski */,
+				E4BB0DEC2059116800B95206 /* KlotskiTests */,
+				E4BB0DF72059116800B95206 /* KlotskiUITests */,
+				E4BB0DD62059116800B95206 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4BB0DD62059116800B95206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4BB0DD52059116800B95206 /* Klotski.app */,
+				E4BB0DE92059116800B95206 /* KlotskiTests.xctest */,
+				E4BB0DF42059116800B95206 /* KlotskiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4BB0DD72059116800B95206 /* Klotski */ = {
+			isa = PBXGroup;
+			children = (
+				E4BB0DD82059116800B95206 /* AppDelegate.swift */,
+				E4BB0DDA2059116800B95206 /* ViewController.swift */,
+				E4BB0DDC2059116800B95206 /* Main.storyboard */,
+				E4BB0DDF2059116800B95206 /* Assets.xcassets */,
+				E4BB0DE12059116800B95206 /* LaunchScreen.storyboard */,
+				E4BB0DE42059116800B95206 /* Info.plist */,
+			);
+			path = Klotski;
+			sourceTree = "<group>";
+		};
+		E4BB0DEC2059116800B95206 /* KlotskiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4BB0DED2059116800B95206 /* KlotskiTests.swift */,
+				E4BB0DEF2059116800B95206 /* Info.plist */,
+			);
+			path = KlotskiTests;
+			sourceTree = "<group>";
+		};
+		E4BB0DF72059116800B95206 /* KlotskiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4BB0DF82059116800B95206 /* KlotskiUITests.swift */,
+				E4BB0DFA2059116800B95206 /* Info.plist */,
+			);
+			path = KlotskiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4BB0DD42059116800B95206 /* Klotski */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4BB0DFD2059116800B95206 /* Build configuration list for PBXNativeTarget "Klotski" */;
+			buildPhases = (
+				E4BB0DD12059116800B95206 /* Sources */,
+				E4BB0DD22059116800B95206 /* Frameworks */,
+				E4BB0DD32059116800B95206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klotski;
+			productName = Klotski;
+			productReference = E4BB0DD52059116800B95206 /* Klotski.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4BB0DE82059116800B95206 /* KlotskiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4BB0E002059116800B95206 /* Build configuration list for PBXNativeTarget "KlotskiTests" */;
+			buildPhases = (
+				E4BB0DE52059116800B95206 /* Sources */,
+				E4BB0DE62059116800B95206 /* Frameworks */,
+				E4BB0DE72059116800B95206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4BB0DEB2059116800B95206 /* PBXTargetDependency */,
+			);
+			name = KlotskiTests;
+			productName = KlotskiTests;
+			productReference = E4BB0DE92059116800B95206 /* KlotskiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4BB0DF32059116800B95206 /* KlotskiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4BB0E032059116800B95206 /* Build configuration list for PBXNativeTarget "KlotskiUITests" */;
+			buildPhases = (
+				E4BB0DF02059116800B95206 /* Sources */,
+				E4BB0DF12059116800B95206 /* Frameworks */,
+				E4BB0DF22059116800B95206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4BB0DF62059116800B95206 /* PBXTargetDependency */,
+			);
+			name = KlotskiUITests;
+			productName = KlotskiUITests;
+			productReference = E4BB0DF42059116800B95206 /* KlotskiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4BB0DCD2059116800B95206 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = softlab;
+				TargetAttributes = {
+					E4BB0DD42059116800B95206 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E4BB0DE82059116800B95206 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4BB0DD42059116800B95206;
+					};
+					E4BB0DF32059116800B95206 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4BB0DD42059116800B95206;
+					};
+				};
+			};
+			buildConfigurationList = E4BB0DD02059116800B95206 /* Build configuration list for PBXProject "Klotski" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4BB0DCC2059116800B95206;
+			productRefGroup = E4BB0DD62059116800B95206 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4BB0DD42059116800B95206 /* Klotski */,
+				E4BB0DE82059116800B95206 /* KlotskiTests */,
+				E4BB0DF32059116800B95206 /* KlotskiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4BB0DD32059116800B95206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BB0DE32059116800B95206 /* LaunchScreen.storyboard in Resources */,
+				E4BB0DE02059116800B95206 /* Assets.xcassets in Resources */,
+				E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DE72059116800B95206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DF22059116800B95206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4BB0DD12059116800B95206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BB0DDB2059116800B95206 /* ViewController.swift in Sources */,
+				E4BB0DD92059116800B95206 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DE52059116800B95206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BB0DEE2059116800B95206 /* KlotskiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB0DF02059116800B95206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BB0DF92059116800B95206 /* KlotskiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4BB0DEB2059116800B95206 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4BB0DD42059116800B95206 /* Klotski */;
+			targetProxy = E4BB0DEA2059116800B95206 /* PBXContainerItemProxy */;
+		};
+		E4BB0DF62059116800B95206 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4BB0DD42059116800B95206 /* Klotski */;
+			targetProxy = E4BB0DF52059116800B95206 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4BB0DDC2059116800B95206 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4BB0DDD2059116800B95206 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4BB0DE12059116800B95206 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4BB0DE22059116800B95206 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4BB0DFB2059116800B95206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4BB0DFC2059116800B95206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4BB0DFE2059116800B95206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = Klotski/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.Klotski;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4BB0DFF2059116800B95206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = Klotski/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.Klotski;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4BB0E012059116800B95206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = KlotskiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.KlotskiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klotski.app/Klotski";
+			};
+			name = Debug;
+		};
+		E4BB0E022059116800B95206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = KlotskiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.KlotskiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klotski.app/Klotski";
+			};
+			name = Release;
+		};
+		E4BB0E042059116800B95206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = KlotskiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.KlotskiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klotski;
+			};
+			name = Debug;
+		};
+		E4BB0E052059116800B95206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
+				INFOPLIST_FILE = KlotskiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nefu.KlotskiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klotski;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4BB0DD02059116800B95206 /* Build configuration list for PBXProject "Klotski" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4BB0DFB2059116800B95206 /* Debug */,
+				E4BB0DFC2059116800B95206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4BB0DFD2059116800B95206 /* Build configuration list for PBXNativeTarget "Klotski" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4BB0DFE2059116800B95206 /* Debug */,
+				E4BB0DFF2059116800B95206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4BB0E002059116800B95206 /* Build configuration list for PBXNativeTarget "KlotskiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4BB0E012059116800B95206 /* Debug */,
+				E4BB0E022059116800B95206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4BB0E032059116800B95206 /* Build configuration list for PBXNativeTarget "KlotskiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4BB0E042059116800B95206 /* Debug */,
+				E4BB0E052059116800B95206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4BB0DCD2059116800B95206 /* Project object */;
+}
