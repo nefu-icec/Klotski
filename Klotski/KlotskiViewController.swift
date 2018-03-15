@@ -23,6 +23,7 @@ class KlotskiViewController: UIViewController {
     
     let width = 900
     let part = 3
+    var x = 0, y = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +42,36 @@ class KlotskiViewController: UIViewController {
                             [imageButton4, imageButton5, imageButton6],
                             [imageButton7, imageButton8, imageButton9]]
 
-        let ground = randomGround(10)
+        let ground = randomGround(2)
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
                 if ground[i][j] != -1 {
                     imageButtons[j][i]?.setBackgroundImage(images[ground[i][j]], for: .normal)
+                } else {
+                    x = i
+                    y = j
                 }
-                
             }
+        }
+        
+        print("\(x) \(y)")
+    }
+    
+    @IBAction func click(_ sender: UIButton) {
+        let exchangeX = sender.tag % part
+        let exchangeY = (sender.tag - exchangeX) / part
+        if (x - 1 == exchangeX && y == exchangeY) ||
+            (x + 1 == exchangeX && y == exchangeY) ||
+            (x == exchangeX && y - 1 == exchangeY) ||
+            (x == exchangeX && y + 1 == exchangeY) {
+            
+        } else {
+            let alertController = UIAlertController(title: "Tip",
+                                                    message: "Cannot exchange!",
+                                                    preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
     
