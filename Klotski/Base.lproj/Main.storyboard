@@ -90,6 +90,13 @@
                     <connections>
                         <outlet property="imageButton1" destination="rsb-VU-iTi" id="cBN-Ep-VAt"/>
                         <outlet property="imageButton2" destination="baK-ei-p45" id="zHe-74-RhH"/>
+                        <outlet property="imageButton3" destination="Ozp-Tl-Yjn" id="MnH-rx-XcT"/>
+                        <outlet property="imageButton4" destination="d6m-De-j25" id="oGP-Io-1g0"/>
+                        <outlet property="imageButton5" destination="ziq-nB-8Yi" id="iHJ-cO-qdT"/>
+                        <outlet property="imageButton6" destination="7vs-q4-eGB" id="7ok-wr-K0j"/>
+                        <outlet property="imageButton7" destination="cKi-Re-l0A" id="ZFd-6j-CGT"/>
+                        <outlet property="imageButton8" destination="zt1-5L-tfU" id="5S7-kh-LG2"/>
+                        <outlet property="imageButton9" destination="SSn-8E-GZf" id="WRo-Wp-GSY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bho-wB-a79" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,6 +105,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="demo.jpg" width="1124" height="1124"/>
+        <image name="demo.jpg" width="900" height="900"/>
     </resources>
 </document>

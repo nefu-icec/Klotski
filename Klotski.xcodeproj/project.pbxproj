@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BB3192BAC95A4D99C9B469D /* Pods_Klotski.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186428D8AF9A7D41F21E8BB8 /* Pods_Klotski.framework */; };
-		E47EAA06205914A6004DC843 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47EAA05205914A6004DC843 /* demo.jpg */; };
+		D5AFFD4B205A48C200599DF6 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5AFFD4A205A48C200599DF6 /* demo.jpg */; };
 		E4BB0DD92059116800B95206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DD82059116800B95206 /* AppDelegate.swift */; };
 		E4BB0DDB2059116800B95206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB0DDA2059116800B95206 /* ViewController.swift */; };
 		E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB0DDC2059116800B95206 /* Main.storyboard */; };
@@ -40,7 +40,7 @@
 		186428D8AF9A7D41F21E8BB8 /* Pods_Klotski.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Klotski.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCF29BFFC5309EAA20D5D21 /* Pods-Klotski.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klotski.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Klotski/Pods-Klotski.debug.xcconfig"; sourceTree = "<group>"; };
 		AAA53D3A47C9F56C925A877A /* Pods-Klotski.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klotski.release.xcconfig"; path = "Pods/Target Support Files/Pods-Klotski/Pods-Klotski.release.xcconfig"; sourceTree = "<group>"; };
-		E47EAA05205914A6004DC843 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
+		D5AFFD4A205A48C200599DF6 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		E4BB0DD52059116800B95206 /* Klotski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klotski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BB0DD82059116800B95206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4BB0DDA2059116800B95206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +125,7 @@
 		E4BB0DD72059116800B95206 /* Klotski */ = {
 			isa = PBXGroup;
 			children = (
+				D5AFFD4A205A48C200599DF6 /* demo.jpg */,
 				E4BB0DD82059116800B95206 /* AppDelegate.swift */,
 				E4BB0DDA2059116800B95206 /* ViewController.swift */,
 				E4FB5A9120591C6700B3D279 /* KlotskiViewController.swift */,
@@ -132,7 +133,6 @@
 				E4BB0DDF2059116800B95206 /* Assets.xcassets */,
 				E4BB0DE12059116800B95206 /* LaunchScreen.storyboard */,
 				E4BB0DE42059116800B95206 /* Info.plist */,
-				E47EAA05205914A6004DC843 /* demo.jpg */,
 			);
 			path = Klotski;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47EAA06205914A6004DC843 /* demo.jpg in Resources */,
+				D5AFFD4B205A48C200599DF6 /* demo.jpg in Resources */,
 				E4BB0DE32059116800B95206 /* LaunchScreen.storyboard in Resources */,
 				E4BB0DE02059116800B95206 /* Assets.xcassets in Resources */,
 				E4BB0DDE2059116800B95206 /* Main.storyboard in Resources */,

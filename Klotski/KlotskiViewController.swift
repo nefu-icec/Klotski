@@ -13,29 +13,31 @@ class KlotskiViewController: UIViewController {
     
     @IBOutlet weak var imageButton1: UIButton!
     @IBOutlet weak var imageButton2: UIButton!
+    @IBOutlet weak var imageButton3: UIButton!
+    @IBOutlet weak var imageButton4: UIButton!
+    @IBOutlet weak var imageButton5: UIButton!
+    @IBOutlet weak var imageButton6: UIButton!
+    @IBOutlet weak var imageButton7: UIButton!
+    @IBOutlet weak var imageButton8: UIButton!
+    @IBOutlet weak var imageButton9: UIButton!
     
-
+    let width = 900
+    let part = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let image1 = UIImage(named: "demo.jpg")?.crop(bounds: CGRect(x: 0, y: 0, width: 374, height: 374))
-        imageButton1.setBackgroundImage(image1, for: .normal)
+        let imageButtons = [[imageButton1, imageButton2, imageButton3],
+                            [imageButton4, imageButton5, imageButton6],
+                            [imageButton7, imageButton8, imageButton9]]
+        let smallWidth = width / part
+        for i in 0...(part - 1) {
+            for j in 0...(part - 1) {
+                let image = UIImage(named: "demo.jpg")?.crop(bounds: CGRect(x: i * width / part,
+                                                                            y: j * width / part,
+                                                                            width: smallWidth,
+                                                                            height: smallWidth))
+                imageButtons[j][i]?.setBackgroundImage(image, for: .normal)
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
