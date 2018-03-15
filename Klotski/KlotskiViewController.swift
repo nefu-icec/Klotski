@@ -26,18 +26,70 @@ class KlotskiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageButtons = [[imageButton1, imageButton2, imageButton3],
-                            [imageButton4, imageButton5, imageButton6],
-                            [imageButton7, imageButton8, imageButton9]]
+        var images: [UIImage] = []
         let smallWidth = width / part
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
-                let image = UIImage(named: "demo.jpg")?.crop(bounds: CGRect(x: i * width / part,
-                                                                            y: j * width / part,
-                                                                            width: smallWidth,
-                                                                            height: smallWidth))
-                imageButtons[j][i]?.setBackgroundImage(image, for: .normal)
+                images.append((UIImage(named: "demo.jpg")?.crop(bounds: CGRect(x: i * width / part,
+                                                                               y: j * width / part,
+                                                                               width: smallWidth,
+                                                                               height: smallWidth)))!)
             }
         }
+        
+        let imageButtons = [[imageButton1, imageButton2, imageButton3],
+                            [imageButton4, imageButton5, imageButton6],
+                            [imageButton7, imageButton8, imageButton9]]
+
+        let ground = randomGround(10)
+        for i in 0...(part - 1) {
+            for j in 0...(part - 1) {
+                if ground[i][j] != -1 {
+                    imageButtons[j][i]?.setBackgroundImage(images[ground[i][j]], for: .normal)
+                }
+                
+            }
+        }
+    }
+    
+    func randomGround(_ n: Int) -> [[Int]] {
+        var ground = [[0, 1, 2],
+                      [3, 4, 5],
+                      [6, 7, -1]]
+
+        var x = part - 1, y = part - 1
+        
+        for _ in 0...(n - 1) {
+            var newX = x, newY = y
+            repeat {
+                newX = x
+                newY = y
+                if arc4random_uniform(2) == 0 {
+                    newX += arc4random_uniform(2) == 0 ? -1 : 1
+                } else {
+                    newY += arc4random_uniform(2) == 0 ? -1 : 1
+                }
+            } while((newX < 0 || newX > part - 1) || (newY < 0 || newY > part - 1))
+            
+            
+            let tmp = ground[x][y]
+            ground[x][y] = ground[newX][newY]
+            ground[newX][newY] = tmp
+            x = newX
+            y = newY
+
+            printGround(ground)
+        }
+        return ground
+    }
+    
+    func printGround(_ ground: [[Int]]) {
+        for i in 0...2 {
+            for j in 0...2 {
+                print("\(ground[i][j]) ", terminator: " ")
+            }
+            print("\n")
+        }
+        print("--------")
     }
 }
