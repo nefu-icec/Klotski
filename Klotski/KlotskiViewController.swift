@@ -21,13 +21,17 @@ class KlotskiViewController: UIViewController {
     @IBOutlet weak var imageButton8: UIButton!
     @IBOutlet weak var imageButton9: UIButton!
     
+    var imageButtons: [[UIButton]] = []
+    var images: [UIImage] = []
+    
     let width = 900
     let part = 3
     var x = 0, y = 0
+    var ground: [[Int]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var images: [UIImage] = []
+        
         let smallWidth = width / part
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
@@ -37,16 +41,16 @@ class KlotskiViewController: UIViewController {
                                                                                height: smallWidth)))!)
             }
         }
-        
-        let imageButtons = [[imageButton1, imageButton2, imageButton3],
-                            [imageButton4, imageButton5, imageButton6],
-                            [imageButton7, imageButton8, imageButton9]]
 
-        let ground = randomGround(2)
+        imageButtons = [[imageButton1, imageButton2, imageButton3],
+                        [imageButton4, imageButton5, imageButton6],
+                        [imageButton7, imageButton8, imageButton9]]
+        
+        ground = randomGround(2)
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
                 if ground[i][j] != -1 {
-                    imageButtons[j][i]?.setBackgroundImage(images[ground[i][j]], for: .normal)
+                    imageButtons[j][i].setBackgroundImage(images[ground[i][j]], for: .normal)
                 } else {
                     x = i
                     y = j
@@ -64,7 +68,19 @@ class KlotskiViewController: UIViewController {
             (x + 1 == exchangeX && y == exchangeY) ||
             (x == exchangeX && y - 1 == exchangeY) ||
             (x == exchangeX && y + 1 == exchangeY) {
+            print("x = \(x), y = \(y), exchangeX = \(exchangeX), exchangeY = \(exchangeY)")
             
+            let tmp = ground[x][y]
+            ground[x][y] = ground[exchangeX][exchangeY]
+            ground[exchangeX][exchangeY] = tmp
+            printGround(ground)
+            
+            let image = imageButtons[exchangeY][exchangeX].backgroundImage(for: .normal)
+            imageButtons[exchangeY][exchangeX].setBackgroundImage(nil, for: .normal)
+            imageButtons[y][x].setBackgroundImage(image, for: .normal)
+            x = exchangeX
+            y = exchangeY
+            print(isSuccess())
         } else {
             let alertController = UIAlertController(title: "Tip",
                                                     message: "Cannot exchange!",
@@ -73,6 +89,20 @@ class KlotskiViewController: UIViewController {
             alertController.addAction(cancelAction)
             present(alertController, animated: true, completion: nil)
         }
+    }
+    
+    func isSuccess() -> Bool {
+        for i in 0...(part - 1) {
+            for j in 0...(part - 1) {
+                if i == part - 1 && j == part - 1 {
+                    continue
+                }
+                if ground[i][j] != i * part + j {
+                    return false
+                }
+            }
+        }
+        return true
     }
     
     func randomGround(_ n: Int) -> [[Int]] {
