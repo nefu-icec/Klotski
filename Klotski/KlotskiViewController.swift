@@ -11,16 +11,6 @@ import AFImageHelper
 
 class KlotskiViewController: UIViewController {
     
-    @IBOutlet weak var imageButton1: UIButton!
-    @IBOutlet weak var imageButton2: UIButton!
-    @IBOutlet weak var imageButton3: UIButton!
-    @IBOutlet weak var imageButton4: UIButton!
-    @IBOutlet weak var imageButton5: UIButton!
-    @IBOutlet weak var imageButton6: UIButton!
-    @IBOutlet weak var imageButton7: UIButton!
-    @IBOutlet weak var imageButton8: UIButton!
-    @IBOutlet weak var imageButton9: UIButton!
-    
     var imageButtons: [[UIButton]] = []
     var images: [UIImage] = []
     
@@ -41,12 +31,8 @@ class KlotskiViewController: UIViewController {
                                                                                height: smallWidth)))!)
             }
         }
-
-        imageButtons = [[imageButton1, imageButton2, imageButton3],
-                        [imageButton4, imageButton5, imageButton6],
-                        [imageButton7, imageButton8, imageButton9]]
         
-        ground = randomGround(2)
+        ground = randomGround(20)
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
                 if ground[i][j] != -1 {
@@ -145,4 +131,17 @@ class KlotskiViewController: UIViewController {
         }
         print("--------")
     }
+    
+    func createImageButtons() {
+        let screenWidth = UIScreen.main.bounds.width
+        let screenHeight = UIScreen.main.bounds.height
+        for i in 0...(part - 1) {
+            var buttons: [UIButton] = []
+            for j in 0...(part - 1) {
+                buttons.append(UIButton(frame: CGRect(x: <#T##CGFloat#>, y: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>)))
+            }
+            imageButtons.append(buttons)
+        }
+    }
+    
 }
