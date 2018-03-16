@@ -32,6 +32,7 @@ class KlotskiViewController: UIViewController {
             }
         }
         
+        createImageButtons()
         ground = randomGround(20)
         for i in 0...(part - 1) {
             for j in 0...(part - 1) {
@@ -117,7 +118,7 @@ class KlotskiViewController: UIViewController {
             x = newX
             y = newY
 
-            printGround(ground)
+//            printGround(ground)
         }
         return ground
     }
@@ -135,13 +136,24 @@ class KlotskiViewController: UIViewController {
     func createImageButtons() {
         let screenWidth = UIScreen.main.bounds.width
         let screenHeight = UIScreen.main.bounds.height
+        let h = (screenHeight - screenWidth) / 2
+        
         for i in 0...(part - 1) {
             var buttons: [UIButton] = []
             for j in 0...(part - 1) {
-                buttons.append(UIButton(frame: CGRect(x: <#T##CGFloat#>, y: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>)))
+                let button = UIButton(frame: CGRect(x: CGFloat(i) * (screenWidth / CGFloat(part)),
+                                                    y: h + CGFloat(j) * (screenHeight / CGFloat(part)),
+                                                    width: screenWidth / CGFloat(part),
+                                                    height: screenWidth / CGFloat(part)))
+                button.addTarget(self, action: #selector(click(_:)), for: .touchUpInside)
+                button.tag = i * part + j
+                buttons.append(button)
+                view.addSubview(button)
             }
             imageButtons.append(buttons)
         }
+        print(imageButtons.count)
+        print(imageButtons[0].count)
     }
     
 }
